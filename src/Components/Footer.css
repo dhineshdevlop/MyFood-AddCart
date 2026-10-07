@@ -1,0 +1,141 @@
+/* Main Footer */
+.footer {
+  background: #123524;
+  color: #ffffff;
+  padding: 60px 8% 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Footer Grid */
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr 1.2fr;
+  gap: 50px;
+}
+
+/* Sections */
+.footer-section h2 {
+  color: #b7d96b;
+  font-size: 30px;
+  margin-bottom: 18px;
+}
+
+.footer-section h3 {
+  color: #b7d96b;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.footer-section p {
+  color: #d7e4da;
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 5px 0;
+}
+
+/* About */
+.footer-about p {
+  max-width: 300px;
+}
+
+/* Quick Links */
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 12px;
+}
+
+.footer-section ul li a {
+  color: #d7e4da;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #b7d96b;
+  padding-left: 5px;
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.social-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 13px;
+  border: 1px solid #6d8f76;
+  padding: 8px 12px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  background: #b7d96b;
+  color: #123524;
+  border-color: #b7d96b;
+}
+
+/* Bottom Footer */
+.footer-bottom {
+  max-width: 1200px;
+  margin: 50px auto 0;
+
+  padding-top: 20px;
+  border-top: 1px solid #45634e;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-bottom p {
+  color: #aebeb2;
+  font-size: 13px;
+  margin: 0;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .footer {
+    padding: 45px 6% 20px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .footer-section h2 {
+    font-size: 26px;
+  }
+
+  .social-links {
+    flex-wrap: wrap;
+  }
+}
